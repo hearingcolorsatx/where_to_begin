@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1158,7 +1159,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/Sand-Dunes-Cover.png");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1352,21 +1353,29 @@ input, select, textarea {
 				border-left: solid 1px #ffffff;
 			}
 
-				#header nav ul li:first-child {
-					border-left: 0;
-				}
+			#header nav ul li:first-child {
+				border-left: 0;
+			}
 
-				#header nav ul li a {
-					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
-					border-bottom: 0;
-				}
+			#header nav ul li:nth-child(0) {
+				border-left: -10;
+				border-left: solid 1px red;
+			}
+
+			#header nav ul li a {
+				display: block;
+				min-width: 12rem;
+				height: 2.75rem;
+				line-height: 2.75rem;
+				padding: 0 0.5rem 0 0.5rem;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+				font-size: 0.7rem;
+				border-bottom: 0;
+				white-space: normal;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
@@ -1546,7 +1555,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: #000000;
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1586,7 +1595,7 @@ input, select, textarea {
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %230196fd%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
@@ -1622,6 +1631,122 @@ input, select, textarea {
 			}
 
 		}
+
+/* Custom CSS for Individual songs */
+#pohl {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#pohl h2, #pohl h2.major {
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+	background-size: cover;
+}
+
+#pohl p {
+	color: #0196fd;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+  }
+
+  #pohl ul, ul.icons li a {
+	color: #0196fd;
+	box-shadow: none;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+	font-size: 133%;
+  }
+
+#imaginaryfriends {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#imaginaryfriends h2, #imaginaryfriends h2.major {
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+	background-size: cover;
+}
+
+#imaginaryfriends p {
+	color: #0196fd;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+  }
+
+#rocio {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#rocio h2, #rocio h2.major {
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+	background-size: cover;
+}
+
+#rocio p {
+	color: #0196fd;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+	}
+
+#about {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#about h2, #about h2.major {
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+}
+
+
+#about p, #about p strong {
+	color: #0196fd;
+	text-align: left;
+}
+
+#credits h3, #credits h3.major {
+	border-bottom: solid 1px #0196fd;
+	color: #0196fd;
+	display: inline;
+	text-align: center;
+	font-size: 28px;
+}	
+
+#credits p, #credits p strong {
+	color: #0196fd;
+}
+	/* End Custom CSS for Individual songs */
 
 /* Footer */
 
