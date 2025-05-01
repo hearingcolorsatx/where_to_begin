@@ -1579,7 +1579,6 @@ input, select, textarea {
 				text-indent: 4rem;
 				overflow: hidden;
 				white-space: nowrap;
-				caret-color: #0196fd;
 			}
 
 				#main article .close:before {
@@ -1603,12 +1602,10 @@ input, select, textarea {
 
 				#main article .close:hover:before {
 					background-color: rgba(255, 255, 255, 0.075);
-					caret-color: #0196fd;
 				}
 
 				#main article .close:active:before {
 					background-color: rgba(255, 255, 255, 0.175);
-					caret-color: #0196fd;
 				}
 
 		@media screen and (max-width: 736px) {
