@@ -1579,6 +1579,7 @@ input, select, textarea {
 				text-indent: 4rem;
 				overflow: hidden;
 				white-space: nowrap;
+				caret-color: #0196fd;
 			}
 
 				#main article .close:before {
@@ -1595,17 +1596,19 @@ input, select, textarea {
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %230196fd%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
 
 				#main article .close:hover:before {
 					background-color: rgba(255, 255, 255, 0.075);
+					caret-color: #0196fd;
 				}
 
 				#main article .close:active:before {
 					background-color: rgba(255, 255, 255, 0.175);
+					caret-color: #0196fd;
 				}
 
 		@media screen and (max-width: 736px) {
@@ -1640,8 +1643,8 @@ input, select, textarea {
 }
 
 #pohl h2, #pohl h2.major {
-	color: #a8451e;
-	border-bottom: solid 1px #a8451e;
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
 	font-size: 33px;
 	display: inline;
 	text-align: center;
@@ -1649,7 +1652,7 @@ input, select, textarea {
 }
 
 #pohl p {
-	color: #a8451e;
+	color: #0196fd;
 	font-size: 20px;
 	text-align: center;
 	justify-content: center;
@@ -1658,7 +1661,7 @@ input, select, textarea {
   }
 
   #pohl ul, ul.icons li a {
-	color: #a8451e;
+	color: #0196fd;
 	box-shadow: none;
 	text-align: center;
 	justify-content: center;
@@ -1674,8 +1677,8 @@ input, select, textarea {
 }
 
 #imaginaryfriends h2, #imaginaryfriends h2.major {
-	color: #a8451e;
-	border-bottom: solid 1px #a8451e;
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
 	font-size: 33px;
 	display: inline;
 	text-align: center;
@@ -1683,7 +1686,7 @@ input, select, textarea {
 }
 
 #imaginaryfriends p {
-	color: #a8451e;
+	color: #0196fd;
 	font-size: 20px;
 	text-align: center;
 	justify-content: center;
@@ -1698,8 +1701,8 @@ input, select, textarea {
 }
 
 #rocio h2, #rocio h2.major {
-	color: #a8451e;
-	border-bottom: solid 1px #a8451e;
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
 	font-size: 33px;
 	display: inline;
 	text-align: center;
@@ -1707,7 +1710,7 @@ input, select, textarea {
 }
 
 #rocio p {
-	color: #a8451e;
+	color: #0196fd;
 	font-size: 20px;
 	text-align: center;
 	justify-content: center;
@@ -1715,26 +1718,38 @@ input, select, textarea {
 	min-height: auto;
 	}
 
-#about h2, #about p {
-	color: #a8451e;
-	}
+#about {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
 
-#about h2.major {
-	border-bottom: solid 1px #a8451e;
+#about h2, #about h2.major {
+	color: #0196fd;
+	border-bottom: solid 1px #0196fd;
 	font-size: 33px;
 	display: inline;
 	text-align: center;
 }
 
-#about h3, #about h3.major {
-	border-bottom: solid 1px #a8451e;
-	color: #a8451e;
+
+#about p, #about p strong {
+	color: #0196fd;
+	text-align: left;
 }
 
-#credits p {
-	color: #a8451e;
+#credits h3, #credits h3.major {
+	border-bottom: solid 1px #0196fd;
+	color: #0196fd;
+	display: inline;
+	text-align: center;
+	font-size: 28px;
+}	
+
+#credits p, #credits p strong {
+	color: #0196fd;
 }
-/* End Custom CSS for Individual songs */
+	/* End Custom CSS for Individual songs */
 
 /* Footer */
 
