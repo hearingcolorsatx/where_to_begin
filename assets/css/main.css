@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1158,7 +1159,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/Sand-Dunes-Cover.png");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1352,21 +1353,29 @@ input, select, textarea {
 				border-left: solid 1px #ffffff;
 			}
 
-				#header nav ul li:first-child {
-					border-left: 0;
-				}
+			#header nav ul li:first-child {
+				border-left: 0;
+			}
 
-				#header nav ul li a {
-					display: block;
-					min-width: 7.5rem;
-					height: 2.75rem;
-					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
-					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
-					border-bottom: 0;
-				}
+			#header nav ul li:nth-child(0) {
+				border-left: -10;
+				border-left: solid 1px red;
+			}
+
+			#header nav ul li a {
+				display: block;
+				min-width: 12rem;
+				height: 2.75rem;
+				line-height: 2.75rem;
+				padding: 0 0.5rem 0 0.5rem;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+				font-size: 0.7rem;
+				border-bottom: 0;
+				white-space: normal;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
 
 					#header nav ul li a:hover {
 						background-color: rgba(255, 255, 255, 0.075);
@@ -1546,7 +1555,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: #000000;
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1622,6 +1631,110 @@ input, select, textarea {
 			}
 
 		}
+
+/* Custom CSS for Individual songs */
+#pohl {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#pohl h2, #pohl h2.major {
+	color: #a8451e;
+	border-bottom: solid 1px #a8451e;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+	background-size: cover;
+}
+
+#pohl p {
+	color: #a8451e;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+  }
+
+  #pohl ul, ul.icons li a {
+	color: #a8451e;
+	box-shadow: none;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+	font-size: 133%;
+  }
+
+#imaginaryfriends {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#imaginaryfriends h2, #imaginaryfriends h2.major {
+	color: #a8451e;
+	border-bottom: solid 1px #a8451e;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+	background-size: cover;
+}
+
+#imaginaryfriends p {
+	color: #a8451e;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+  }
+
+#rocio {
+	max-width: 100%;
+	text-align: center;
+	background-color: #000000;
+}
+
+#rocio h2, #rocio h2.major {
+	color: #a8451e;
+	border-bottom: solid 1px #a8451e;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+	background-size: cover;
+}
+
+#rocio p {
+	color: #a8451e;
+	font-size: 20px;
+	text-align: center;
+	justify-content: center;
+	max-width: auto;
+	min-height: auto;
+	}
+
+#about h2, #about p {
+	color: #a8451e;
+	}
+
+#about h2.major {
+	border-bottom: solid 1px #a8451e;
+	font-size: 33px;
+	display: inline;
+	text-align: center;
+}
+
+#about h3, #about h3.major {
+	border-bottom: solid 1px #a8451e;
+	color: #a8451e;
+}
+
+#credits p {
+	color: #a8451e;
+}
+/* End Custom CSS for Individual songs */
 
 /* Footer */
 
