@@ -1633,13 +1633,15 @@ input, select, textarea {
 		}
 
 /* Custom CSS for Individual songs */
-#pohl {
+#pohl, #imaginaryfriends, #rocio, #about {
 	max-width: 100%;
 	text-align: center;
 	background-color: #000000;
 }
 
-#pohl h2, #pohl h2.major {
+#pohl h2, #pohl h2.major,
+#imaginaryfriends h2, #imaginaryfriends h2.major,
+#rocio h2, #rocio h2.major {
 	color: #0196fd;
 	border-bottom: solid 1px #0196fd;
 	font-size: 33px;
@@ -1649,18 +1651,22 @@ input, select, textarea {
 	/* background-size: cover; */
 }
 
-#pohl p {
+#pohl p,
+#imaginaryfriends p,
+#rocio p {
 	color: #0196fd;
-	font-size: 20px;
+	font-size: 14pt;
 	text-align: right;
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin: 0 0 .66em 0;
 	max-width: auto;
-	min-height: auto;
+	/* min-height: auto; */
 	text-align: center;
   }
 
-  #pohl ul, ul.icons li a {
+  #pohl ul, #imaginaryfriends ul,
+  #rocio ul, ul.icons li a {
 	color: #0196fd;
 	box-shadow: none;
 	text-align: center;
@@ -1669,65 +1675,6 @@ input, select, textarea {
 	min-height: auto;
 	font-size: 133%;
   }
-
-#imaginaryfriends {
-	max-width: 100%;
-	text-align: center;
-	background-color: #000000;
-}
-
-#imaginaryfriends h2, #imaginaryfriends h2.major {
-	color: #0196fd;
-	border-bottom: solid 1px #0196fd;
-	font-size: 33px;
-	display: inline;
-	text-align: center;
-	background-size: cover;
-}
-
-#imaginaryfriends p {
-	color: #0196fd;
-	font-size: 20px;
-	text-align: right;
-	padding-left: 7%;
-	padding-right: 12%;
-	text-wrap:initial;
-	max-width: auto;
-	min-height: auto;
-	text-align: center;
-  }
-
-#rocio {
-	max-width: 100%;
-	text-align: center;
-	background-color: #000000;
-}
-
-#rocio h2, #rocio h2.major {
-	color: #0196fd;
-	border-bottom: solid 1px #0196fd;
-	font-size: 33px;
-	display: inline;
-	text-align: center;
-	background-size: cover;
-}
-
-#rocio p {
-	color: #0196fd;
-	font-size: 20px;
-	text-align: right;
-	padding-left: 10%;
-	padding-right: 15%;
-	max-width: auto;
-	min-height: auto;
-	text-align: center;
-	}
-
-#about {
-	max-width: 100%;
-	text-align: center;
-	background-color: #000000;
-}
 
 #about h2, #about h2.major {
 	color: #0196fd;
@@ -1743,18 +1690,25 @@ input, select, textarea {
 	text-align: left;
 }
 
+#pohl h3, #pohl h3.major,
+#imaginaryfriends h3, #imaginaryfriends h3.major,
+#rocio h3, #rocio h3.major,
+#about h3, #about h3.major,
 #credits h3, #credits h3.major,
 #recording-production h3, #recording-production h3.major {
 	border-bottom: solid 1px #0196fd;
 	color: #0196fd;
 	display: inline;
 	text-align: center;
-	font-size: 28px;
+	font-size: 18pt;
 }	
 
+#about p, #about p strong,
 #credits p, #credits p strong,
 #recording-production p, #recording-production p strong {
+	margin: 0 0 .66em 0;
 	color: #0196fd;
+	font-size: 14pt;
 }
 	/* End Custom CSS for Individual songs */
 
