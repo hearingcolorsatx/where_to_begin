@@ -1651,6 +1651,16 @@ input, select, textarea {
 	/* background-size: cover; */
 }
 
+#pohl h3, #pohl h3.major,
+#imaginaryfriends h3, #imaginaryfriends h3.major,
+#rocio h3, #rocio h3.major {
+	border-bottom: solid 1px #0196fd;
+	color: #0196fd;
+	display: inline;
+	text-align: center;
+	font-size: 18pt;
+}
+
 #pohl p,
 #imaginaryfriends p,
 #rocio p {
@@ -1663,7 +1673,20 @@ input, select, textarea {
 	max-width: auto;
 	/* min-height: auto; */
 	text-align: center;
-  }
+	perspective: 20px;
+	animation: perspective 0s cubic-bezier(0.35, 0.06, 0.92, 0.03) 1 forwards;
+	transform-style: preserve-3d;
+	}
+	@keyframes perspective {
+		0% {
+			  perspective: 100px;
+			  transform: scale(0.5);
+		}
+		100% {
+			  perspective: 10000px;
+			  transform: scale(1);
+		}
+	}
 
   #pohl ul, #imaginaryfriends ul,
   #rocio ul, ul.icons li a {
@@ -1690,9 +1713,6 @@ input, select, textarea {
 	text-align: left;
 }
 
-#pohl h3, #pohl h3.major,
-#imaginaryfriends h3, #imaginaryfriends h3.major,
-#rocio h3, #rocio h3.major,
 #about h3, #about h3.major,
 #credits h3, #credits h3.major,
 #recording-production h3, #recording-production h3.major {
@@ -1701,7 +1721,7 @@ input, select, textarea {
 	display: inline;
 	text-align: center;
 	font-size: 18pt;
-}	
+}
 
 #about p, #about p strong,
 #credits p, #credits p strong,
@@ -1748,3 +1768,433 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Text effect for lyrics */
+
+  .lyric-word {
+	display: inline-block;
+	justify-content: center;
+  }
+  .lyric-word:nth-child(1) {
+	transform: translateZ(-837.6585208384px);
+  }
+  .lyric-word:nth-child(2) {
+	transform: translateZ(-596.7855897847px);
+  }
+  .lyric-word:nth-child(3) {
+	transform: translateZ(-10.6281503964px);
+  }
+  .lyric-word:nth-child(4) {
+	transform: translateZ(-651.0455704917px);
+  }
+  .lyric-word:nth-child(5) {
+	transform: translateZ(-502.8504752787px);
+  }
+  .lyric-word:nth-child(6) {
+	transform: translateZ(-664.7345431305px);
+  }
+  .lyric-word:nth-child(7) {
+	transform: translateZ(-245.6513267834px);
+  }
+  .lyric-word:nth-child(8) {
+	transform: translateZ(-388.9079113764px);
+  }
+  .lyric-word:nth-child(9) {
+	transform: translateZ(-421.5054565052px);
+  }
+  .lyric-word:nth-child(10) {
+	transform: translateZ(-33.9093867465px);
+  }
+  .lyric-word:nth-child(11) {
+	transform: translateZ(-183.5895676932px);
+  }
+  .lyric-word:nth-child(12) {
+	transform: translateZ(-548.8252226188px);
+  }
+  .lyric-word:nth-child(13) {
+	transform: translateZ(-204.1688556646px);
+  }
+  .lyric-word:nth-child(14) {
+	transform: translateZ(-649.1208618928px);
+  }
+  .lyric-word:nth-child(15) {
+	transform: translateZ(-504.9538759531px);
+  }
+  .lyric-word:nth-child(16) {
+	transform: translateZ(-539.7155636379px);
+  }
+  .lyric-word:nth-child(17) {
+	transform: translateZ(-805.1790921649px);
+  }
+  .lyric-word:nth-child(18) {
+	transform: translateZ(-883.3233105732px);
+  }
+  .lyric-word:nth-child(19) {
+	transform: translateZ(-760.4553366035px);
+  }
+  .lyric-word:nth-child(20) {
+	transform: translateZ(-601.2231382016px);
+  }
+  .lyric-word:nth-child(21) {
+	transform: translateZ(-430.6039787719px);
+  }
+  .lyric-word:nth-child(22) {
+	transform: translateZ(-411.7518268614px);
+  }
+  .lyric-word:nth-child(23) {
+	transform: translateZ(-76.0214605673px);
+  }
+  .lyric-word:nth-child(24) {
+	transform: translateZ(-125.6634177032px);
+  }
+  .lyric-word:nth-child(25) {
+	transform: translateZ(-953.9442358867px);
+  }
+  .lyric-word:nth-child(26) {
+	transform: translateZ(-978.5079706733px);
+  }
+  .lyric-word:nth-child(27) {
+	transform: translateZ(-875.6470832363px);
+  }
+  .lyric-word:nth-child(28) {
+	transform: translateZ(-957.8445311438px);
+  }
+  .lyric-word:nth-child(29) {
+	transform: translateZ(-324.5183685455px);
+  }
+  .lyric-word:nth-child(30) {
+	transform: translateZ(-590.7228486426px);
+  }
+  .lyric-word:nth-child(31) {
+	transform: translateZ(-748.1761358549px);
+  }
+  .lyric-word:nth-child(32) {
+	transform: translateZ(-204.9244851987px);
+  }
+  .lyric-word:nth-child(33) {
+	transform: translateZ(-83.4799747312px);
+  }
+  .lyric-word:nth-child(34) {
+	transform: translateZ(-375.3188961411px);
+  }
+  .lyric-word:nth-child(35) {
+	transform: translateZ(-147.4009992128px);
+  }
+  .lyric-word:nth-child(36) {
+	transform: translateZ(-593.8894222563px);
+  }
+  .lyric-word:nth-child(37) {
+	transform: translateZ(-680.9944304973px);
+  }
+  .lyric-word:nth-child(38) {
+	transform: translateZ(-996.7679767999px);
+  }
+  .lyric-word:nth-child(39) {
+	transform: translateZ(-736.1594800272px);
+  }
+  .lyric-word:nth-child(40) {
+	transform: translateZ(-298.0285898976px);
+  }
+  .lyric-word:nth-child(41) {
+	transform: translateZ(-804.1679071785px);
+  }
+  .lyric-word:nth-child(42) {
+	transform: translateZ(-637.1712137565px);
+  }
+  .lyric-word:nth-child(43) {
+	transform: translateZ(-344.9138917488px);
+  }
+  .lyric-word:nth-child(44) {
+	transform: translateZ(-720.5499446887px);
+  }
+  .lyric-word:nth-child(45) {
+	transform: translateZ(-414.8714854621px);
+  }
+  .lyric-word:nth-child(46) {
+	transform: translateZ(-631.0877536538px);
+  }
+  .lyric-word:nth-child(47) {
+	transform: translateZ(-721.6664176296px);
+  }
+  .lyric-word:nth-child(48) {
+	transform: translateZ(-460.5009499911px);
+  }
+  .lyric-word:nth-child(49) {
+	transform: translateZ(-367.5648429108px);
+  }
+  .lyric-word:nth-child(50) {
+	transform: translateZ(-773.5813316454px);
+  }
+  .lyric-word:nth-child(51) {
+	transform: translateZ(-737.7990331082px);
+  }
+  .lyric-word:nth-child(52) {
+	transform: translateZ(-498.209849168px);
+  }
+  .lyric-word:nth-child(53) {
+	transform: translateZ(-846.7919225429px);
+  }
+  .lyric-word:nth-child(54) {
+	transform: translateZ(-553.8130279988px);
+  }
+  .lyric-word:nth-child(55) {
+	transform: translateZ(-434.3050749896px);
+  }
+  .lyric-word:nth-child(56) {
+	transform: translateZ(-735.978304263px);
+  }
+  .lyric-word:nth-child(57) {
+	transform: translateZ(-956.9531493783px);
+  }
+  .lyric-word:nth-child(58) {
+	transform: translateZ(-336.5200243147px);
+  }
+  .lyric-word:nth-child(59) {
+	transform: translateZ(-792.1918179135px);
+  }
+  .lyric-word:nth-child(60) {
+	transform: translateZ(-390.2024006007px);
+  }
+  .lyric-word:nth-child(61) {
+	transform: translateZ(-690.7535076162px);
+  }
+  .lyric-word:nth-child(62) {
+	transform: translateZ(-747.8618527234px);
+  }
+  .lyric-word:nth-child(63) {
+	transform: translateZ(-754.3800703035px);
+  }
+  .lyric-word:nth-child(64) {
+	transform: translateZ(-872.952410981px);
+  }
+  .lyric-word:nth-child(65) {
+	transform: translateZ(-460.4152956147px);
+  }
+  .lyric-word:nth-child(66) {
+	transform: translateZ(-926.2080500626px);
+  }
+  .lyric-word:nth-child(67) {
+	transform: translateZ(-745.2142662479px);
+  }
+  .lyric-word:nth-child(68) {
+	transform: translateZ(-542.2082149608px);
+  }
+  .lyric-word:nth-child(69) {
+	transform: translateZ(-786.2548154672px);
+  }
+  .lyric-word:nth-child(70) {
+	transform: translateZ(-161.5664621539px);
+  }  
+  .lyric-word:nth-child(71) {
+	transform: translateZ(-837.6585208384px);
+  }
+  .lyric-word:nth-child(72) {
+	transform: translateZ(-596.7855897847px);
+  }
+  .lyric-word:nth-child(73) {
+	transform: translateZ(-10.6281503964px);
+  }
+  .lyric-word:nth-child(74) {
+	transform: translateZ(-651.0455704917px);
+  }
+  .lyric-word:nth-child(75) {
+	transform: translateZ(-502.8504752787px);
+  }
+  .lyric-word:nth-child(76) {
+	transform: translateZ(-664.7345431305px);
+  }
+  .lyric-word:nth-child(77) {
+	transform: translateZ(-245.6513267834px);
+  }
+  .lyric-word:nth-child(78) {
+	transform: translateZ(-388.9079113764px);
+  }
+  .lyric-word:nth-child(79) {
+	transform: translateZ(-421.5054565052px);
+  }
+  .lyric-word:nth-child(80) {
+	transform: translateZ(-33.9093867465px);
+  }
+  .lyric-word:nth-child(81) {
+	transform: translateZ(-183.5895676932px);
+  }
+  .lyric-word:nth-child(82) {
+	transform: translateZ(-548.8252226188px);
+  }
+  .lyric-word:nth-child(83) {
+	transform: translateZ(-204.1688556646px);
+  }
+  .lyric-word:nth-child(84) {
+	transform: translateZ(-649.1208618928px);
+  }
+  .lyric-word:nth-child(85) {
+	transform: translateZ(-504.9538759531px);
+  }
+  .lyric-word:nth-child(86) {
+	transform: translateZ(-539.7155636379px);
+  }
+  .lyric-word:nth-child(87) {
+	transform: translateZ(-805.1790921649px);
+  }
+  .lyric-word:nth-child(88) {
+	transform: translateZ(-883.3233105732px);
+  }
+  .lyric-word:nth-child(89) {
+	transform: translateZ(-760.4553366035px);
+  }
+  .lyric-word:nth-child(90) {
+	transform: translateZ(-601.2231382016px);
+  }
+  .lyric-word:nth-child(91) {
+	transform: translateZ(-430.6039787719px);
+  }
+  .lyric-word:nth-child(92) {
+	transform: translateZ(-411.7518268614px);
+  }
+  .lyric-word:nth-child(93) {
+	transform: translateZ(-76.0214605673px);
+  }
+  .lyric-word:nth-child(94) {
+	transform: translateZ(-125.6634177032px);
+  }
+  .lyric-word:nth-child(95) {
+	transform: translateZ(-953.9442358867px);
+  }
+  .lyric-word:nth-child(96) {
+	transform: translateZ(-978.5079706733px);
+  }
+  .lyric-word:nth-child(97) {
+	transform: translateZ(-875.6470832363px);
+  }
+  .lyric-word:nth-child(98) {
+	transform: translateZ(-957.8445311438px);
+  }
+  .lyric-word:nth-child(99) {
+	transform: translateZ(-324.5183685455px);
+  }
+  .lyric-word:nth-child(100) {
+	transform: translateZ(-590.7228486426px);
+  }
+  .lyric-word:nth-child(101) {
+	transform: translateZ(-748.1761358549px);
+  }
+  .lyric-word:nth-child(102) {
+	transform: translateZ(-204.9244851987px);
+  }
+  .lyric-word:nth-child(103) {
+	transform: translateZ(-83.4799747312px);
+  }
+  .lyric-word:nth-child(104) {
+	transform: translateZ(-375.3188961411px);
+  }
+  .lyric-word:nth-child(105) {
+	transform: translateZ(-147.4009992128px);
+  }
+  .lyric-word:nth-child(106) {
+	transform: translateZ(-593.8894222563px);
+  }
+  .lyric-word:nth-child(107) {
+	transform: translateZ(-680.9944304973px);
+  }
+  .lyric-word:nth-child(108) {
+	transform: translateZ(-996.7679767999px);
+  }
+  .lyric-word:nth-child(109) {
+	transform: translateZ(-736.1594800272px);
+  }
+  .lyric-word:nth-child(110) {
+	transform: translateZ(-298.0285898976px);
+  }
+  .lyric-word:nth-child(111) {
+	transform: translateZ(-804.1679071785px);
+  }
+  .lyric-word:nth-child(112) {
+	transform: translateZ(-637.1712137565px);
+  }
+  .lyric-word:nth-child(113) {
+	transform: translateZ(-344.9138917488px);
+  }
+  .lyric-word:nth-child(114) {
+	transform: translateZ(-720.5499446887px);
+  }
+  .lyric-word:nth-child(115) {
+	transform: translateZ(-414.8714854621px);
+  }
+  .lyric-word:nth-child(116) {
+	transform: translateZ(-631.0877536538px);
+  }
+  .lyric-word:nth-child(117) {
+	transform: translateZ(-721.6664176296px);
+  }
+  .lyric-word:nth-child(118) {
+	transform: translateZ(-460.5009499911px);
+  }
+  .lyric-word:nth-child(119) {
+	transform: translateZ(-367.5648429108px);
+  }
+  .lyric-word:nth-child(120) {
+	transform: translateZ(-773.5813316454px);
+  }
+  .lyric-word:nth-child(121) {
+	transform: translateZ(-737.7990331082px);
+  }
+  .lyric-word:nth-child(122) {
+	transform: translateZ(-498.209849168px);
+  }
+  .lyric-word:nth-child(123) {
+	transform: translateZ(-846.7919225429px);
+  }
+  .lyric-word:nth-child(124) {
+	transform: translateZ(-553.8130279988px);
+  }
+  .lyric-word:nth-child(125) {
+	transform: translateZ(-434.3050749896px);
+  }
+  .lyric-word:nth-child(126) {
+	transform: translateZ(-735.978304263px);
+  }
+  .lyric-word:nth-child(127) {
+	transform: translateZ(-956.9531493783px);
+  }
+  .lyric-word:nth-child(128) {
+	transform: translateZ(-336.5200243147px);
+  }
+  .lyric-word:nth-child(129) {
+	transform: translateZ(-792.1918179135px);
+  }
+  .lyric-word:nth-child(130) {
+	transform: translateZ(-390.2024006007px);
+  }
+  .lyric-word:nth-child(131) {
+	transform: translateZ(-690.7535076162px);
+  }
+  .lyric-word:nth-child(132) {
+	transform: translateZ(-747.8618527234px);
+  }
+  .lyric-word:nth-child(133) {
+	transform: translateZ(-754.3800703035px);
+  }
+  .lyric-word:nth-child(134) {
+	transform: translateZ(-872.952410981px);
+  }
+  .lyric-word:nth-child(135) {
+	transform: translateZ(-460.4152956147px);
+  }
+  .lyric-word:nth-child(136) {
+	transform: translateZ(-926.2080500626px);
+  }
+  .lyric-word:nth-child(137) {
+	transform: translateZ(-745.2142662479px);
+  }
+  .lyric-word:nth-child(138) {
+	transform: translateZ(-542.2082149608px);
+  }
+  .lyric-word:nth-child(139) {
+	transform: translateZ(-786.2548154672px);
+  }
+  .lyric-word:nth-child(140) {
+	transform: translateZ(-161.5664621539px);
+  }  
+
+  /* Text effect for lyrics */
+  

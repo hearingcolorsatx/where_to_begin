@@ -4,6 +4,64 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// Text effects for lyrics
+const selectors = ['#pohl p', '#pohl h3', '#imaginaryfriends p', '#imaginaryfriends h3', '#rocio p', '#rocio h3'];
+
+selectors.forEach(sel => {
+  document.querySelectorAll(sel).forEach(el => {
+    // avoid double-wrapping if this runs more than once
+    if (el.dataset.fxDone) return;
+    el.dataset.fxDone = "1";
+
+    el.innerHTML = el.innerHTML.replace(
+      /(^|<\/?[^>]+>|\s+)([^\s<]+)/g,
+      '$1<span class="lyric-word">$2</span>'
+    );
+  });
+});
+
+// Sway effect for lyrics (ONLY the lyric words)
+
+document.querySelectorAll('.lyric-word').forEach(word => {
+  if (word.id !== "currentYear") {
+	gsap.to(word, {
+      x: () => Math.random() * 15 - 5,
+      y: () => Math.random() * 15 - 5,
+      duration: 5,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+// // Alternate
+// 	gsap.to(word, {
+// 		x: "random(-6, 6)",
+// 		y: "random(-6, 6)",
+// 		duration: "random(4, 8)",
+// 		repeat: -1,
+// 		yoyo: true,
+// 		ease: "sine.inOut"
+// 	});
+  }
+});
+
+// Icons sway (unchanged)
+document.querySelectorAll('ul.icons li').forEach(icon => {
+  gsap.to(icon, {
+    x: () => Math.random() * 15 - 5,
+    y: () => Math.random() * 15 - 5,
+    duration: 5,
+    repeat: -1,
+    yoyo: true,
+    ease: "linear",
+  });
+});
+
+// Heading sway
+var tl = gsap.timeline({ repeat: -1 });
+tl.to("#pohl h3, #imaginaryfriends h3, #rocio h3", 30, { backgroundPosition: "-960px 0" });
+
+// End text effects for lyrics
+
 // Typing text effect found here: (https://codepen.io/qkevinto/pen/WQVNWO/)
 
 const resolver = {
