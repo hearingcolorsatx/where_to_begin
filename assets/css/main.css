@@ -1645,16 +1645,19 @@ input, select, textarea {
 	font-size: 33px;
 	display: inline;
 	text-align: center;
-	background-size: cover;
+	max-width: 100%;
+	/* background-size: cover; */
 }
 
 #pohl p {
 	color: #0196fd;
 	font-size: 20px;
-	text-align: center;
-	justify-content: center;
+	text-align: right;
+	padding-left: 25%;
+	padding-right: 25%;
 	max-width: auto;
 	min-height: auto;
+	text-align: center;
   }
 
   #pohl ul, ul.icons li a {
@@ -1685,10 +1688,13 @@ input, select, textarea {
 #imaginaryfriends p {
 	color: #0196fd;
 	font-size: 20px;
-	text-align: center;
-	justify-content: center;
+	text-align: right;
+	padding-left: 7%;
+	padding-right: 12%;
+	text-wrap:initial;
 	max-width: auto;
 	min-height: auto;
+	text-align: center;
   }
 
 #rocio {
@@ -1709,10 +1715,12 @@ input, select, textarea {
 #rocio p {
 	color: #0196fd;
 	font-size: 20px;
-	text-align: center;
-	justify-content: center;
+	text-align: right;
+	padding-left: 10%;
+	padding-right: 15%;
 	max-width: auto;
 	min-height: auto;
+	text-align: center;
 	}
 
 #about {
@@ -1735,7 +1743,8 @@ input, select, textarea {
 	text-align: left;
 }
 
-#credits h3, #credits h3.major {
+#credits h3, #credits h3.major,
+#recording-production h3, #recording-production h3.major {
 	border-bottom: solid 1px #0196fd;
 	color: #0196fd;
 	display: inline;
@@ -1743,7 +1752,8 @@ input, select, textarea {
 	font-size: 28px;
 }	
 
-#credits p, #credits p strong {
+#credits p, #credits p strong,
+#recording-production p, #recording-production p strong {
 	color: #0196fd;
 }
 	/* End Custom CSS for Individual songs */
