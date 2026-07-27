@@ -5,60 +5,134 @@
 */
 
 // Text effects for lyrics
-const selectors = ['#pohl p', '#pohl h3', '#imaginaryfriends p', '#imaginaryfriends h3', '#rocio p', '#rocio h3'];
+// const selectors = [
+//   '#pohl p',
+//   '#pohl h3',
+//   '#imaginaryfriends p',
+//   '#imaginaryfriends h3',
+//   '#rocio p',
+//   '#rocio h3'
+// ];
 
-selectors.forEach(sel => {
-  document.querySelectorAll(sel).forEach(el => {
-    // avoid double-wrapping if this runs more than once
-    if (el.dataset.fxDone) return;
-    el.dataset.fxDone = "1";
+// const lyricMotionToggle = document.querySelector('#lyricsMotionToggle');
 
-    el.innerHTML = el.innerHTML.replace(
-      /(^|<\/?[^>]+>|\s+)([^\s<]+)/g,
-      '$1<span class="lyric-word">$2</span>'
-    );
-  });
-});
+// let lyricTweens = [];
+// let headingTween = null;
+// let lyricMotionEnabled = true;
 
-// Sway effect for lyrics (ONLY the lyric words)
+// // Wrap each lyric word only once.
+// function prepareLyricWords() {
+//   selectors.forEach(selector => {
+//     document.querySelectorAll(selector).forEach(element => {
+//       if (element.dataset.fxDone) return;
 
-document.querySelectorAll('.lyric-word').forEach(word => {
-  if (word.id !== "currentYear") {
-	gsap.to(word, {
-      x: () => Math.random() * 15 - 5,
-      y: () => Math.random() * 15 - 5,
-      duration: 5,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
-    });
-// // Alternate
-// 	gsap.to(word, {
-// 		x: "random(-6, 6)",
-// 		y: "random(-6, 6)",
-// 		duration: "random(4, 8)",
-// 		repeat: -1,
-// 		yoyo: true,
-// 		ease: "sine.inOut"
-// 	});
-  }
-});
+//       element.dataset.fxDone = '1';
 
-// Icons sway (unchanged)
-document.querySelectorAll('ul.icons li').forEach(icon => {
-  gsap.to(icon, {
-    x: () => Math.random() * 15 - 5,
-    y: () => Math.random() * 15 - 5,
-    duration: 5,
-    repeat: -1,
-    yoyo: true,
-    ease: "linear",
-  });
-});
+//       element.innerHTML = element.innerHTML.replace(
+//         /(^|<\/?[^>]+>|\s+)([^\s<]+)/g,
+//         '$1<span class="lyric-word">$2</span>'
+//       );
+//     });
+//   });
+// }
 
-// Heading sway
-var tl = gsap.timeline({ repeat: -1 });
-tl.to("#pohl h3, #imaginaryfriends h3, #rocio h3", 30, { backgroundPosition: "-960px 0" });
+// // Start the moving lyric effect.
+// function startLyricMotion() {
+//   stopLyricMotion(false);
+
+//   document.querySelectorAll('.lyric-word').forEach(word => {
+//     if (word.id === 'currentYear') return;
+
+//     const tween = gsap.to(word, {
+//       x: () => Math.random() * 15 - 5,
+//       y: () => Math.random() * 15 - 5,
+//       duration: 5,
+//       repeat: -1,
+//       yoyo: true,
+//       ease: 'sine.inOut'
+//     });
+
+//     lyricTweens.push(tween);
+//   });
+
+//   headingTween = gsap.to(
+//     '#pohl h3, #imaginaryfriends h3, #rocio h3',
+//     {
+//       backgroundPosition: '-960px 0',
+//       duration: 30,
+//       repeat: -1,
+//       ease: 'none'
+//     }
+//   );
+
+//   lyricMotionEnabled = true;
+//   updateMotionToggle();
+// }
+
+// // Stop the movement and optionally return everything to its original position.
+// function stopLyricMotion(resetPosition = true) {
+//   lyricTweens.forEach(tween => tween.kill());
+//   lyricTweens = [];
+
+//   if (headingTween) {
+//     headingTween.kill();
+//     headingTween = null;
+//   }
+
+//   if (resetPosition) {
+//     gsap.set('.lyric-word', {
+//       clearProps: 'transform'
+//     });
+//   }
+
+//   lyricMotionEnabled = false;
+//   updateMotionToggle();
+// }
+
+// function updateMotionToggle() {
+//   if (!lyricMotionToggle) return;
+
+//   lyricMotionToggle.setAttribute(
+//     'aria-pressed',
+//     String(lyricMotionEnabled)
+//   );
+
+//   lyricMotionToggle.setAttribute(
+//     'aria-label',
+//     lyricMotionEnabled
+//       ? 'Pause lyric motion'
+//       : 'Play lyric motion'
+//   );
+
+//   const label = lyricMotionToggle.querySelector('.toggle-label');
+
+//   if (label) {
+//     label.textContent = lyricMotionEnabled
+//       ? "Prints of Her Lipstick"
+//       : "it's the way she mover her hips";
+//   }
+// }
+
+// prepareLyricWords();
+
+// // Respect the visitor's operating-system motion preference.
+// const prefersReducedMotion = window.matchMedia(
+//   '(prefers-reduced-motion: reduce)'
+// );
+
+// if (prefersReducedMotion.matches) {
+//   stopLyricMotion();
+// } else {
+//   startLyricMotion();
+// }
+
+// lyricMotionToggle?.addEventListener('click', () => {
+//   if (lyricMotionEnabled) {
+//     stopLyricMotion();
+//   } else {
+//     startLyricMotion();
+//   }
+// });
 
 // End text effects for lyrics
 
